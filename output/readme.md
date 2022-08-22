@@ -1,0 +1,1 @@
+Proto file compilation result will be placed here.

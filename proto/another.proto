@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+import "simple.proto";
+
+message NotSoSimple {
+    Simple simple = 1;
+    string comment = 2;
+}
