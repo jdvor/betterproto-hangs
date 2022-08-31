@@ -22,3 +22,17 @@ pipenv run protoc_plain
 * betterproto: 1.2.5
 * protoc-wheel-0: 21.1
 * tried several methods of protoc invocation with same result: cmd.exe, powershell, subprocess.call
+
+
+## Steps to reproduce 2 (Docker image)
+It actually does not lead to same issue, so 
+
+```shell
+# compiles and runs new docker image with python environment and required packages installed
+docker build -t bphangs .
+
+docker run -it bphangs bash
+
+# within shell session attached to container from previous step, run:
+test.sh
+```
